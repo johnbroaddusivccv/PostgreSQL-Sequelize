@@ -1,0 +1,29 @@
+{
+  "name": "postgresql-sequelize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express-handlebars": "^3.1.0",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1",
+    "pg": "^7.11.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^5.8.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnbroaddusivccv/PostgreSQL-Sequelize.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnbroaddusivccv/PostgreSQL-Sequelize/issues"
+  },
+  "homepage": "https://github.com/johnbroaddusivccv/PostgreSQL-Sequelize#readme"
+}
