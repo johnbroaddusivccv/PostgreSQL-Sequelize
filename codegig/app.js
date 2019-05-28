@@ -12,6 +12,19 @@ db.authenticate()
 
 const app = express();
 
+// HandleBars
+app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
+app.set('view engine', 'handlebars');
+
+// Body parser
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// Set static Folder
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Index route
+app.get('/', (req, res) => res.render('index', {layout: 'landing'}));
+
 app.get("/", (req, res) => res.send('INDEX'));
 
 // gig routes
